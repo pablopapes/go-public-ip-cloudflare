@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  go-compiler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: go run main.go

@@ -14,10 +14,12 @@ DNS_RECORD_ID=YOUR_DNS_RECORD_ID
 ```
 
 5. Compile the code
-```go build main.go
+```
+go build main.go
 ```
 6. Run the code
-```./main
+```
+./main
 ```
 7. You can use a cron job to run the code every X minutes/hours/days
 ```

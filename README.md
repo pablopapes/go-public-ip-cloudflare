@@ -1,5 +1,5 @@
 # go-public-ip-cloudflare
-Update DNS with your public IP address using Cloudflare API
+Update Cloudflare DNS with your public IP address using Cloudflare API
 
 ## Usage
 1. Create a Cloudflare account and get your API key and Zone ID

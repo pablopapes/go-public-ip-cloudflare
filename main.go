@@ -140,15 +140,14 @@ func updateDnsRecord(apikey string, zoneId string, recordId string, ipAddress st
 		Content: ipAddress,
 	}
 
-	b := new(bytes.Buffer)
-	json.NewEncoder(b).Encode(newRecord)
+	body := new(bytes.Buffer)
+	json.NewEncoder(body).Encode(newRecord)
 
 	client := &http.Client{}
-	req, err := http.NewRequest("PATCH", "https://api.cloudflare.com/client/v4/zones/"+zoneId+"/dns_records/"+recordId, b)
+	req, err := http.NewRequest("PATCH", "https://api.cloudflare.com/client/v4/zones/"+zoneId+"/dns_records/"+recordId, body)
 
 	log.Println("https://api.cloudflare.com/client/v4/zones/" + zoneId + "/dns_records/" + recordId)
 	log.Println("IP Address: " + ipAddress)
-	log.Println(b)
 
 	if err != nil {
 		log.Fatal(err)

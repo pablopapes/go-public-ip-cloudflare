@@ -15,5 +15,5 @@
 # vendor/
 
 .env
-
+main
 config.json

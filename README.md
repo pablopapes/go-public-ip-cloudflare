@@ -1,4 +1,4 @@
-# go-public-ip-cloudflare
+# CloudFlare IP Updater
 Update Cloudflare DNS with your public IP address using Cloudflare API
 
 ## Usage
